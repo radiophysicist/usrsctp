@@ -1,0 +1,22 @@
+Source: usrsctp
+Priority: optional
+Maintainer: Denis <shade@unknown>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Standards-Version: 3.9.4
+Section: libs
+Homepage: https://github.com/sctplab/usrsctp
+
+Package: usrsctp-dev
+Section: libdevel
+Architecture: any
+Depends: usrsctp (= ${binary:Version})
+Description: Userland SCTP stack (dev)
+ Development files
+
+Package: usrsctp
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Userland SCTP stack
+ SCTP User-land implementation based on RFC 6458
+
