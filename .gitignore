@@ -83,3 +83,7 @@ debian/tmp/*
 debian/usrsctp
 debian/usrsctp-dev
 *.dh-orig
+
+#Build dir
+obj-x86_64-linux-gnu/
+
