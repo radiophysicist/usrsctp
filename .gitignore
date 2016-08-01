@@ -68,3 +68,8 @@ programs/test_libmgmt
 
 # callgrind
 callgrind.out*
+
+# CMake building stuff
+CMakeFiles/
+build/
+build_win32/
