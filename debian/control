@@ -1,7 +1,7 @@
 Source: usrsctp
 Priority: optional
 Maintainer: Denis <shade@unknown>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, make, cmake
 Standards-Version: 3.9.4
 Section: libs
 Homepage: https://github.com/sctplab/usrsctp
