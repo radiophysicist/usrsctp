@@ -1,8 +1,10 @@
 #!/usr/bin/make -f
-# -*- makefile -*-
+
+include /usr/share/cdbs/1/class/cmake.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-%:
-	dh $@  --with autotools-dev
+# CMake options
+export DEB_CMAKE_EXTRA_FLAGS=-DCMAKE_BUILD_TYPE=Release -DINET=OFF -DINET6=OFF -DSCTP_DEBUG=OFF
